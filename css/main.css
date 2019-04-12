@@ -789,44 +789,43 @@ input[type=button] {
 
 /* Hero Area */
 
-.hero-area h1 {
-  width: 60%;
-  font-size: 3.75em;
-}
+  .hero-area h1 {
+    width: 60%;
+    font-size: 3.75em;
+  }
 
 /* Aside */
 
-aside .content-wrapper {
-  justify-content: space-around;
-}
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
 
-aside .content-wrapper .form-description,
-aside .content-wrapper .form {
-  width: 30%;
-}
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
 
-.form-description p {
-  font-size: 1.125em;
-}
+  .form-description p {
+    font-size: 1.125em;
+  }
 
 /* Features */
-.features h2 {
-  width: 70%;
-}
+  .features h2 {
+    width: 70%;
+  }
 
-.features article {
-  flex-basis: 33%;
-}
+  .features article {
+    flex-basis: 33%;
+  }
 
-  /* Reviews */
+    /* Reviews */
 
-.reviews article div {
-  width: 42%;
-}
+  .reviews article div {
+    width: 42%;
+  }
 
   /* Footer */
 
-}
 
 /* ==========================================================================
 About Page
@@ -854,19 +853,21 @@ About Page
 FAQ Page
 ========================================================================== */
 
-.faq h2 {
-  width: 100%;
-  font-size: 3em;
-}
+  .faq h2 {
+    width: 100%;
+    font-size: 3em;
+  }
 
-.faq-content {
-  flex-basis: 35%;
-}
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
+  }
 
-.faq h4,
-.faq p {
-  font-size: 1.125em;
-  line-height: 1;
+  .faq-content {
+    flex-basis: 35%;
+  }
+
 }
 
 /* ==========================================================================
