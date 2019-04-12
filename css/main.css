@@ -117,6 +117,8 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -134,6 +136,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -222,7 +225,6 @@ header nav ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 0;
 }
 
 header nav ul li {
@@ -288,9 +290,7 @@ footer .copyright {
   min-height: 500px;
 }
 
-.hero-area h1 {
-  font-size: 2.25em;
-}
+
 
 /* Aside area */
 
@@ -360,6 +360,10 @@ input[type=button] {
   margin-bottom: 40px;
 }
 
+.features h2 {
+  margin-bottom: 60px;
+}
+
 /* Reviews area */
 
 .reviews {
@@ -379,7 +383,9 @@ input[type=button] {
   margin: 20px 0;
 }
 
-/* --------------- Mobile Styles -- About ---------------- */
+/* ==========================================================================
+   About Page
+   ========================================================================== */
 
 .mission {
   background-color: #527158;
@@ -417,7 +423,9 @@ input[type=button] {
   height: 100%;
 }
 
-/* --------------- Mobile Styles -- FAQ ---------------- */
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
 
 .faq {
   background-color: #527158;
@@ -443,6 +451,7 @@ input[type=button] {
 .faq-content {
   margin-bottom: 50px;
 }
+
 
 .faq-content h4 {
   line-height: 1.333;
@@ -538,7 +547,7 @@ input[type=button] {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 768) {
+@media only screen and (min-width: 768px) {
   /* Tablet styles here */
 
 /***** Homepage *****/
@@ -548,6 +557,16 @@ input[type=button] {
 .content-wrapper {
        max-width: 640px;
        margin: 100px 0;
+   }
+
+   h2 {
+     font-size: 2.25em;
+     line-height: 1.333;
+   }
+
+   h3 {
+     font-size: 1.5em;
+     line-height: 1.25;
    }
 
 /* Header */
@@ -576,6 +595,10 @@ header nav ul {
 
 header figure {
   width: 30%;
+}
+
+header h1 {
+  padding: 0;
 }
 
 /* Hero Area */
@@ -616,8 +639,12 @@ aside .content-wrapper .form {
   flex-basis: 50%;
 }
 
-.features article .features-items-description {
+.features .features-items-description {
   width: 50%;
+}
+
+.features i {
+  margin-bottom: 30px;
 }
 
 /* Reviews */
@@ -627,9 +654,18 @@ aside .content-wrapper .form {
   justify-content: space-between;
 }
 
-.reviews article div {
-  width: 49%;
+.reviews h2 {
+  width: 90%;
+}
 
+.reviews article div,
+.reviews article figure {
+  width: 49%;
+}
+
+.reviews h3 {
+  width: 75%;
+  margin: 0;
 }
 
 /* Footer */
@@ -643,6 +679,7 @@ footer .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 
 footer .contact {
@@ -653,7 +690,23 @@ footer .copyright {
   width: 100%;
 }
 
-/****** About page ******/
+footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+      line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
 
 .mission-content {
        display: flex;
@@ -675,13 +728,19 @@ footer .copyright {
        align-items: flex-start;
 }
 
-  .map figure {
-    padding-bottom: 45.5%;
-  }
+    .map figure {
+      padding-bottom: 45.5%;
+    }
 
-/****** FAQ page *****/
+    .contact-content h4 {
+      font-size: 1.5em;
+    }
 
-.faq .content-wrapper {
+    /* ==========================================================================
+     FAQ Page
+     ========================================================================== */
+
+     .faq .content-wrapper {
         justify-content: space-between;
     }
 
@@ -692,30 +751,43 @@ footer .copyright {
     .faq h2 {
         width: 100%;
     }
+
+    .faq h4,
+    .faq p {
+      font-size: .875em;
+      line-height: 1.125;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
 
-.content-wrapper {
-  max-width: 960px;
-}
+  /* General Styles */
+  .content-wrapper {
+    max-width: 960px;
+  }
 
-/* General styles */
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
 
 /* Header */
-
-header figure {
-  width: 24%;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-}
 
 /* Hero Area */
 
 .hero-area h1 {
   width: 60%;
+  font-size: 3.75em;
 }
 
 /* Aside */
@@ -752,11 +824,14 @@ aside .content-wrapper .form {
 
 }
 
-/****** About page *****/
+/* ==========================================================================
+About Page
+========================================================================== */
 
 .mission h2,
 .contact-section .content-wrapper h2 {
   width: 100%;
+  font-size: 3em;
 }
 
 .contact-section .content-wrapper h2 {
@@ -767,14 +842,27 @@ aside .content-wrapper .form {
   padding-bottom: 37.5%;
 }
 
-/****** FAQ page *****/
+.contact-content h4 {
+  font-size: 1.875em;
+}
+
+/* ==========================================================================
+FAQ Page
+========================================================================== */
 
 .faq h2 {
   width: 100%;
+  font-size: 3em;
 }
 
 .faq-content {
   flex-basis: 35%;
+}
+
+.faq h4,
+.faq p {
+  font-size: 1.125em;
+  line-height: 1;
 }
 
 /* ==========================================================================
