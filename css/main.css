@@ -401,6 +401,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 .contact-content p {
@@ -455,7 +456,7 @@ input[type=button] {
 
 .faq-content h4 {
   line-height: 1.333;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 
@@ -554,10 +555,10 @@ input[type=button] {
 
 /* General styles */
 
-.content-wrapper {
-       max-width: 640px;
-       margin: 100px 0;
-   }
+  .content-wrapper {
+         max-width: 640px;
+         margin: 100px 0;
+     }
 
    h2 {
      font-size: 2.25em;
@@ -571,129 +572,129 @@ input[type=button] {
 
 /* Header */
 
-header {
-  justify-content: space-around;
+  header {
+    justify-content: space-around;
 
-}
+  }
 
-header .content-wrapper {
-  width: 100%;
-  justify-content: space-between;
-}
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
 
-header nav {
-  width: 20%;
-}
+  header nav {
+    width: 20%;
+  }
 
-header nav ul {
-  justify-content: space-between;
-}
+  header nav ul {
+    justify-content: space-between;
+  }
 
-.header-divider {
-  display: none;
-}
+  .header-divider {
+    display: none;
+  }
 
-header figure {
-  width: 30%;
-}
+  header figure {
+    width: 30%;
+  }
 
-header h1 {
-  padding: 0;
-}
+  header h1 {
+    padding: 0;
+  }
 
 /* Hero Area */
 
-.hero-area h1 {
-  font-size: 3em;
-  line-height: 1;
-  margin: 0;
-}
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
 /* Aside */
 
-aside .content-wrapper {
-  margin: 50px 0;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-}
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
 
-aside .content-wrapper .form-description,
-aside .content-wrapper .form {
-  width: 35%;
-  margin: 0;
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 35%;
+    margin: 0;
 
-}
+  }
 
 /* Features */
 
-.features h2 {
-    margin: 0 20px 20px 0;
-}
+  .features h2 {
+      margin: 0 20px 20px 0;
+  }
 
-.features article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  flex-basis: 50%;
-}
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
 
-.features .features-items-description {
-  width: 50%;
-}
+  .features .features-items-description {
+    width: 50%;
+  }
 
-.features i {
-  margin-bottom: 30px;
-}
+  .features i {
+    margin-bottom: 30px;
+  }
 
 /* Reviews */
 
-.reviews article {
-  display: flex;
-  justify-content: space-between;
-}
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.reviews h2 {
-  width: 90%;
-}
+  .reviews h2 {
+    width: 90%;
+  }
 
-.reviews article div,
-.reviews article figure {
-  width: 49%;
-}
+  .reviews article div,
+  .reviews article figure {
+    width: 49%;
+  }
 
-.reviews h3 {
-  width: 75%;
-  margin: 0;
-}
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
 
 /* Footer */
 
-footer .content-wrapper {
-  width: 65%;
-  margin: 100px 0;
-}
-
-footer .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-
-footer .contact {
-  margin-bottom: 0;
-}
-
-footer .copyright {
-  width: 100%;
-}
-
-footer h4 {
-    font-size: 1.5em;
-    margin-bottom: 40px;
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
   }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  footer h4 {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
 
   footer p {
       line-height: 1.285;
@@ -718,7 +719,11 @@ footer h4 {
        width: 40%;
    }
 
-   .contact-section, .content-wrapper h2 {
+   .contact-section {
+     width: 100%;
+   }
+
+   .content-wrapper h2 {
        width: 80%;
    }
 
